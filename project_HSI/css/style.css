@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+  padding: 10px;
+}
+
+.logo {
+  margin-left: 137px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.content {
+  flex-basis: 60%;
+}
+
+.content h1 {
+  width: 494px;
+  height: 138px;
+  margin-left: 132px;
+  margin-top: 205px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 69px;
+}
+
+.content p {
+  position: absolute;
+  width: 494px;
+  height: 88px;
+  left: 137px;
+  top: 363px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 158%;
+  /* or 28px */
+
+  color: #000000;
+}
+
+.products {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products img {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content {
+    flex-basis: 100%;
+  }
+
+  .products {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  .products img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
